@@ -49,6 +49,7 @@ public class MainServlet extends HttpServlet {
         // easy way
         final var id = Long.parseLong(path.substring(1 + path.lastIndexOf("/")));
         controller.removeById(id, resp);
+
         return;
       }
       resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
