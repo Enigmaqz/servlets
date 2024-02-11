@@ -2,7 +2,7 @@ package ru.netology.repository;
 
 import org.springframework.stereotype.Repository;
 import ru.netology.model.Post;
-
+import ru.netology.repository.PostRepository;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
