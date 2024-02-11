@@ -26,7 +26,7 @@ public class MainServlet extends HttpServlet {
     final var context = new AnnotationConfigApplicationContext(JavaConfig.class);
 
     // получаем по имени бина
-    final var controller = context.getBean("postController");
+    controller = (PostController) context.getBean("postController");
   }
 
   @Override
